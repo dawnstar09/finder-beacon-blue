@@ -11,6 +11,7 @@ const Navbar = () => {
   const navItems = [
     { name: "홈", path: "/" },
     { name: "동아리 소개", path: "/about" },
+    { name: "활동", path: "/activities" },
     { name: "동아리 실적", path: "/achievements" },
     { name: "멤버", path: "/members" },
     { name: "참가신청", path: "/apply" },
@@ -25,7 +26,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img src={finderLogo} alt="FINDER" className="h-10 w-10" />
-            <div className="font-bold text-xl bg-gradient-primary bg-clip-text text-transparent">
+            <div className="font-bold text-xl bg-gradient-primary bg-clip-text text-transparent font-pretendard">
               FINDER
             </div>
           </Link>
@@ -36,7 +37,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium transition-colors hover:text-primary font-pretendard ${
                   isActivePath(item.path)
                     ? "text-primary border-b-2 border-primary"
                     : "text-muted-foreground"

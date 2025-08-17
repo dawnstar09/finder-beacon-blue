@@ -59,7 +59,12 @@ export default {
 					'blue-light': 'hsl(var(--finder-blue-light))',
 					navy: 'hsl(var(--finder-navy))',
 					gray: 'hsl(var(--finder-gray))'
-				},
+			},
+			fontFamily: {
+				'sans': ['Pretendard', 'Inter', 'system-ui', 'sans-serif'],
+				'inter': ['Inter', 'system-ui', 'sans-serif'],
+				'pretendard': ['Pretendard', 'system-ui', 'sans-serif'],
+			},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

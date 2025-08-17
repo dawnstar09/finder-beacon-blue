@@ -7,57 +7,69 @@ const Members = () => {
   const currentMembers = [
     {
       name: "김민수",
-      role: "회장",
-      year: "4학년",
-      major: "컴퓨터공학과",
-      email: "minsu.kim@university.ac.kr",
-      achievements: ["전국 대회 대상", "논문 1저자"],
-      skills: ["리더십", "프로젝트 관리", "Python", "AI"]
+      role: "회장", 
+      year: "3학년",
+      major: "이과",
+      email: "minsu.kim@school.ac.kr",
+      achievements: ["전국 대회 대상", "프로그래밍 대회 금상"],
+      skills: ["리더십", "프로젝트 관리", "Python", "AI"],
+      avatar: "SW",
+      color: "bg-blue-500"
     },
     {
       name: "이지영",
       role: "부회장",
       year: "3학년", 
-      major: "경영학과",
-      email: "jiyoung.lee@university.ac.kr",
-      achievements: ["창업 공모전 최우수상", "인턴십 우수"],
-      skills: ["기획", "마케팅", "데이터 분석", "Excel"]
+      major: "문과",
+      email: "jiyoung.lee@school.ac.kr",
+      achievements: ["창업 공모전 최우수상", "기획 경진대회 수상"],
+      skills: ["기획", "마케팅", "데이터 분석", "Excel"],
+      avatar: "HW",
+      color: "bg-purple-500"
     },
     {
       name: "박준호",
       role: "학술부장",
-      year: "3학년",
-      major: "전자공학과", 
-      email: "junho.park@university.ac.kr",
-      achievements: ["SCI 논문 게재", "특허 출원"],
-      skills: ["연구", "하드웨어", "C++", "임베디드"]
+      year: "2학년",
+      major: "이과", 
+      email: "junho.park@school.ac.kr",
+      achievements: ["과학 논문 발표", "로봇 대회 수상"],
+      skills: ["연구", "하드웨어", "C++", "임베디드"],
+      avatar: "NS",
+      color: "bg-teal-500"
     },
     {
       name: "최수진",
       role: "대외협력부장",
       year: "2학년",
-      major: "국제경영학과",
-      email: "sujin.choi@university.ac.kr", 
-      achievements: ["해외 교환학생", "영어 토익 990"],
-      skills: ["협상", "영어", "네트워킹", "프레젠테이션"]
+      major: "문과",
+      email: "sujin.choi@school.ac.kr", 
+      achievements: ["영어 말하기 대회 수상", "교환학생 프로그램"],
+      skills: ["협상", "영어", "네트워킹", "프레젠테이션"],
+      avatar: "MT",
+      color: "bg-green-500"
     },
     {
       name: "정동현",
       role: "홍보부장",
       year: "2학년",
-      major: "디자인학과",
-      email: "donghyun.jung@university.ac.kr",
+      major: "예체능",
+      email: "donghyun.jung@school.ac.kr",
       achievements: ["디자인 공모전 수상", "브랜딩 프로젝트"],
-      skills: ["디자인", "브랜딩", "포토샵", "영상편집"]
+      skills: ["디자인", "브랜딩", "포토샵", "영상편집"],
+      avatar: "DS",
+      color: "bg-indigo-500"
     },
     {
       name: "한소영",
       role: "총무",
       year: "1학년",
-      major: "경제학과", 
-      email: "soyoung.han@university.ac.kr",
+      major: "문과", 
+      email: "soyoung.han@school.ac.kr",
       achievements: ["신입생 우수상", "장학금 수여"],
-      skills: ["회계", "기획", "Excel", "커뮤니케이션"]
+      skills: ["회계", "기획", "Excel", "커뮤니케이션"],
+      avatar: "TR",
+      color: "bg-pink-500"
     }
   ];
 
@@ -65,26 +77,26 @@ const Members = () => {
     {
       name: "서민재",
       graduationYear: "2023",
-      currentPosition: "삼성전자 소프트웨어 엔지니어",
-      major: "컴퓨터공학과"
+      currentPosition: "서울대학교 컴퓨터공학과 재학",
+      major: "이과"
     },
     {
       name: "윤하림",
       graduationYear: "2022", 
-      currentPosition: "네이버 데이터 사이언티스트",
-      major: "통계학과"
+      currentPosition: "연세대학교 경영학과 재학",
+      major: "문과"
     },
     {
       name: "조승우",
       graduationYear: "2021",
-      currentPosition: "카카오 프로덕트 매니저",
-      major: "산업공학과"
+      currentPosition: "KAIST 전자공학과 재학",
+      major: "이과"
     },
     {
       name: "김나영",
       graduationYear: "2020",
-      currentPosition: "구글 코리아 마케팅",
-      major: "경영학과"
+      currentPosition: "고려대학교 국제학부 재학",
+      major: "문과"
     }
   ];
 
@@ -111,12 +123,12 @@ const Members = () => {
               <Users className="w-4 h-4 mr-2" />
               Team Members
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent font-pretendard">
               FINDER 멤버
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed font-pretendard font-light">
               함께 성장하며 최고를 추구하는 FINDER의 멤버들을 소개합니다.
-              다양한 전공과 배경을 가진 우수한 인재들이 모여 있습니다.
+              다양한 전공과 배경을 가진 우수한 학생들이 모여 있습니다.
             </p>
           </div>
         </div>
@@ -145,67 +157,71 @@ const Members = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">현재 임원진</h2>
-            <p className="text-xl text-muted-foreground">2024년 FINDER를 이끌어가는 핵심 멤버들</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-pretendard">현재 임원진</h2>
+            <p className="text-xl text-muted-foreground font-pretendard font-light">2024년 FINDER를 이끌어가는 핵심 멤버들</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {currentMembers.map((member, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-xl">{member.name}</CardTitle>
-                    <Badge className={`${getRoleColor(member.role)} text-white`}>
+              <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 border-0">
+                <CardContent className="p-8 text-center">
+                  {/* Avatar Circle */}
+                  <div className={`w-24 h-24 ${member.color} rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}>
+                    <span className="text-white font-bold text-xl font-pretendard">{member.avatar}</span>
+                  </div>
+                  
+                  {/* Member Info */}
+                  <div className="mb-6">
+                    <h3 className="text-xl font-semibold mb-2 font-pretendard">{member.name}</h3>
+                    <Badge className={`${getRoleColor(member.role)} text-white mb-2`}>
                       {member.role}
                     </Badge>
+                    <div className="text-sm text-muted-foreground font-pretendard font-light">
+                      {member.year} • {member.major}
+                    </div>
                   </div>
-                  <div className="text-sm text-muted-foreground">
-                    {member.year} • {member.major}
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {/* Contact */}
-                    <div className="flex items-center text-sm text-muted-foreground">
-                      <Mail className="w-4 h-4 mr-2" />
+
+                  {/* Contact */}
+                  <div className="mb-4">
+                    <div className="text-sm text-muted-foreground font-pretendard font-light">
                       {member.email}
                     </div>
-                    
-                    {/* Achievements */}
-                    <div>
-                      <h4 className="font-semibold mb-2 text-sm">주요 성과</h4>
-                      <div className="flex flex-wrap gap-1">
-                        {member.achievements.map((achievement, achIndex) => (
-                          <Badge key={achIndex} variant="secondary" className="text-xs">
-                            {achievement}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    {/* Skills */}
-                    <div>
-                      <h4 className="font-semibold mb-2 text-sm">전문 분야</h4>
-                      <div className="flex flex-wrap gap-1">
-                        {member.skills.map((skill, skillIndex) => (
-                          <Badge key={skillIndex} variant="outline" className="text-xs">
-                            {skill}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    {/* Contact Button */}
-                    <Button 
-                      variant="finder-outline" 
-                      size="sm" 
-                      className="w-full"
-                      onClick={() => window.location.href = `mailto:${member.email}`}
-                    >
-                      <Mail className="w-4 h-4 mr-2" />
-                      연락하기
-                    </Button>
                   </div>
+                  
+                  {/* Achievements */}
+                  <div className="mb-4">
+                    <h4 className="font-semibold mb-2 text-sm font-pretendard">주요 성과</h4>
+                    <div className="flex flex-wrap gap-1 justify-center">
+                      {member.achievements.map((achievement, achIndex) => (
+                        <Badge key={achIndex} variant="secondary" className="text-xs font-pretendard">
+                          {achievement}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Skills */}
+                  <div className="mb-6">
+                    <h4 className="font-semibold mb-2 text-sm font-pretendard">전문 분야</h4>
+                    <div className="flex flex-wrap gap-1 justify-center">
+                      {member.skills.map((skill, skillIndex) => (
+                        <Badge key={skillIndex} variant="outline" className="text-xs font-pretendard">
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Contact Button */}
+                  <Button 
+                    variant="finder-outline" 
+                    size="sm" 
+                    className="w-full font-pretendard"
+                    onClick={() => window.location.href = `mailto:${member.email}`}
+                  >
+                    <Mail className="w-4 h-4 mr-2" />
+                    연락하기
+                  </Button>
                 </CardContent>
               </Card>
             ))}

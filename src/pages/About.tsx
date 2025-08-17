@@ -50,11 +50,11 @@ const About = () => {
             <Badge variant="secondary" className="mb-4">
               Est. 2011
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent font-pretendard">
               FINDER 소개
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              13년의 역사와 전통을 자랑하는 대학교 최고의 동아리입니다. 
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed font-pretendard font-light">
+              13년의 역사와 전통을 자랑하는 고등학교 최고의 동아리입니다. 
               지속적인 성장과 혁신을 통해 1등 동아리의 위치를 유지하고 있습니다.
             </p>
           </div>
@@ -67,9 +67,9 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Card className="shadow-card hover:shadow-elegant transition-all duration-300">
               <CardContent className="p-8">
-                <h2 className="text-3xl font-bold mb-4 text-finder-blue">미션</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  학술적 탁월성과 실무 역량을 갖춘 인재 양성을 통해 
+                <h2 className="text-3xl font-bold mb-4 text-finder-blue font-pretendard">미션</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed font-pretendard font-light">
+                  학업적 탁월성과 실무 역량을 갖춘 인재 양성을 통해 
                   사회에 기여하는 리더를 육성합니다.
                 </p>
               </CardContent>
@@ -77,8 +77,8 @@ const About = () => {
             
             <Card className="shadow-card hover:shadow-elegant transition-all duration-300">
               <CardContent className="p-8">
-                <h2 className="text-3xl font-bold mb-4 text-finder-blue">비전</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <h2 className="text-3xl font-bold mb-4 text-finder-blue font-pretendard">비전</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed font-pretendard font-light">
                   지속적인 혁신과 성장을 바탕으로 업계 최고의 
                   동아리로서의 위치를 공고히 하겠습니다.
                 </p>

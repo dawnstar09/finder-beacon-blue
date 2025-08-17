@@ -29,18 +29,21 @@ const Index = () => {
       icon: Target,
       title: "목표 지향적 활동",
       description: "체계적인 계획과 실행으로 확실한 성과를 만들어갑니다.",
+      color: "bg-blue-500",
       link: "/about"
     },
     {
       icon: BookOpen,
       title: "실무 중심 학습",
       description: "이론과 실무를 결합한 실질적인 역량 개발을 추구합니다.",
+      color: "bg-purple-500",
       link: "/achievements"
     },
     {
       icon: MessageCircle,
       title: "네트워킹",
-      description: "동문 멘토링과 산업체 연계로 성장 기회를 제공합니다.",
+      description: "선배 멘토링과 타 학교 연계로 성장 기회를 제공합니다.",
+      color: "bg-teal-500",
       link: "/members"
     }
   ];
@@ -56,17 +59,17 @@ const Index = () => {
       >
         <div className="absolute inset-0 bg-gradient-hero opacity-80"></div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <Badge variant="secondary" className="mb-6 bg-white/20 text-white border-white/30">
+          <Badge variant="secondary" className="mb-6 bg-white/20 text-white border-white/30 font-pretendard">
             <Calendar className="w-4 h-4 mr-2" />
-            Est. 2011 • 대학교 1등 동아리
+            Est. 2011 • 고등학교 1등 동아리
           </Badge>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in font-pretendard">
             FINDER
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up">
-            13년의 역사와 전통을 자랑하는 대학교 최고의 동아리입니다.
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up font-pretendard font-light">
+            13년의 역사와 전통을 자랑하는 고등학교 최고의 동아리입니다.
             <br />
             지속적인 성장과 혁신을 통해 우수한 인재를 양성합니다.
           </p>
@@ -89,20 +92,20 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">숫자로 보는 FINDER</h2>
-            <p className="text-xl text-muted-foreground">지속적인 성장과 우수한 성과를 자랑합니다</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-pretendard">숫자로 보는 FINDER</h2>
+            <p className="text-xl text-muted-foreground font-pretendard font-light">지속적인 성장과 우수한 성과를 자랑합니다</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {stats.map((stat, index) => (
-              <Card key={index} className="text-center shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
+              <Card key={index} className="text-center shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 border-0 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-8 h-8 text-white" />
+                  <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-glow">
+                    <stat.icon className="w-10 h-10 text-white" />
                   </div>
-                  <div className="text-4xl font-bold mb-2 text-finder-blue">{stat.value}</div>
-                  <div className="font-semibold mb-2">{stat.label}</div>
-                  <div className="text-sm text-muted-foreground">{stat.description}</div>
+                  <div className="text-4xl font-bold mb-2 text-finder-blue font-pretendard">{stat.value}</div>
+                  <div className="font-semibold mb-2 font-pretendard">{stat.label}</div>
+                  <div className="text-sm text-muted-foreground font-pretendard font-light">{stat.description}</div>
                 </CardContent>
               </Card>
             ))}
@@ -114,20 +117,20 @@ const Index = () => {
       <section className="py-20 bg-gradient-subtle">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">왜 FINDER인가?</h2>
-            <p className="text-xl text-muted-foreground">FINDER만의 특별한 장점들을 소개합니다</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-pretendard">왜 FINDER인가?</h2>
+            <p className="text-xl text-muted-foreground font-pretendard font-light">FINDER만의 특별한 장점들을 소개합니다</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
+              <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 border-0 bg-white">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                    <highlight.icon className="w-8 h-8 text-white" />
+                  <div className={`w-20 h-20 ${highlight.color} rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}>
+                    <highlight.icon className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-4">{highlight.title}</h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">{highlight.description}</p>
-                  <Button variant="finder-outline" asChild>
+                  <h3 className="text-xl font-semibold mb-4 font-pretendard">{highlight.title}</h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed font-pretendard font-light">{highlight.description}</p>
+                  <Button variant="finder-outline" asChild className="font-pretendard">
                     <Link to={highlight.link}>
                       자세히 보기
                       <ArrowRight className="w-4 h-4 ml-2" />
